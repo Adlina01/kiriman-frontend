@@ -31,7 +31,7 @@ function SendDoa() {
             addBotMessage('Pilih kategori doa:', 2400, getCategoryOptions());
             setChatStep('category');
         }
-    }, [chatOpen]);
+    }, [chatOpen]); // eslint-disable-line react-hooks/exhaustive-deps
 
     const addBotMessage = (text, delay = 600, options = null) => {
         setTimeout(() => {

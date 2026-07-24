@@ -29,7 +29,7 @@ function GoogleCallback({ onLogin }) {
         } else {
             navigate('/');
         }
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
         <p style={{ color: '#4A5A2C', textAlign: 'center', marginTop: '40vh', fontSize: '18px' }}>

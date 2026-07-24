@@ -143,7 +143,6 @@ function Dashboard({ onLogout }) {
 
     const totalDoa = stats?.total || 0;
     const recitedDoa = stats?.recited || 0;
-    const progressPercent = totalDoa > 0 ? Math.round((recitedDoa / totalDoa) * 100) : 0;
 
     return (
         <div style={styles.container}>
